@@ -23,8 +23,8 @@ Le système suit une architecture microservices avec trois composants principaux
 2. Middleware (microservices Spring Boot)
 3. Backend de calcul (Node.js)
 - ![Aperçu de l'Architecture](https://i.ibb.co/LR0PfSj/arch-project.png)
-- (https://github.com/user-attachments/assets/81908527-2846-4b76-8957-fbc3350fedfc)
 
+  https://github.com/user-attachments/assets/81908527-2846-4b76-8957-fbc3350fedfc
 
 ### Flux de Données
 1. L'utilisateur soumet une équation via l'interface React
