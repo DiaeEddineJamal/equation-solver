@@ -1,0 +1,22 @@
+{
+  "name": "differential-equation-solver",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs": "^4.22.0",
+    "@tensorflow/tfjs-node": "^4.17.0",
+    "cors": "^2.8.5",
+    "differential-equation-solver": "file:",
+    "express": "^4.18.2",
+    "joi": "^17.11.0",
+    "mathjs": "^12.4.3"
+  },
+  "devDependencies": {
+    "vitest": "^0.34.6"
+  }
+}
