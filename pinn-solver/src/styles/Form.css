@@ -1,0 +1,175 @@
+.form-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #ffffff, #f8f9ff);
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(37, 117, 252, 0.1),
+    0 6px 6px rgba(37, 117, 252, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.form-container:hover {
+  transform: translateY(-2px);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  animation: slideIn 0.5s ease forwards;
+}
+
+.form-group:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.form-group:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.form-group:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.form-group:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.form-group:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}
+
+.form-group input {
+  width: 94%;
+  padding: 0.8rem 1rem;
+  border: 2px solid #e1e8ff;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #2c3e50;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.form-group input:hover {
+  border-color: #bad4ff;
+}
+
+.form-group input:focus {
+  border-color: #2575fc;
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(37, 117, 252, 0.1), 0 1px 2px rgba(0, 0, 0, 0.05);
+  transform: translateY(-1px);
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards 0.6s;
+}
+.button-solve {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards 0.6s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 117, 252, 0.3);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .form-group input {
+    padding: 0.7rem 0.9rem;
+  }
+}
+
+/* Optional: Add a loading state for the button */
+button.loading {
+  background: linear-gradient(135deg, #8e44ad 0%, #3498db 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+button.loading::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}

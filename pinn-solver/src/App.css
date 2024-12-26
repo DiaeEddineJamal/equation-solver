@@ -1,0 +1,155 @@
+/* Base styles */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: #333;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 100vh;
+  background: white;
+}
+
+.stepper-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  background: white;
+}
+
+/* Stepper header styling */
+.p-stepper .p-stepper-header {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin-bottom: 2rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Stepper buttons */
+.p-stepper-button {
+  flex: 1;
+  max-width: 300px;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  position: relative;
+  padding: 1rem 2rem !important;
+  transition: all 0.3s ease !important;
+  text-align: center;
+}
+
+/* Header text */
+.p-stepper-button span {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #666;
+  transition: all 0.3s ease;
+}
+
+/* Active header */
+.p-stepper-button.p-highlight span {
+  color: #6a11cb;
+  font-weight: 600;
+}
+
+/* Animated line */
+.p-stepper .p-stepper-header::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 50%;
+  height: 3px;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+/* Form styling */
+.form-panel {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eef2f6;
+  animation: fadeInUp 0.3s ease forwards;
+}
+
+/* Ensure StepperPanel content is visible */
+.p-stepper-panel {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Number indicators */
+.p-stepper-button::before {
+  content: attr(data-step);
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  color: #666;
+  transition: all 0.3s ease;
+}
+
+.p-stepper-button.p-highlight::before {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+}
+
+/* Remove default separator */
+.p-stepper-header .p-stepper-separator {
+  display: none !important;
+}
+
+/* Ensure form content is visible */
+.p-stepper-panel-content {
+  display: block !important;
+  visibility: visible !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .stepper-container {
+    padding: 0 0.5rem;
+  }
+
+  .form-panel {
+    padding: 1rem;
+  }
+
+  .p-stepper-button span {
+    font-size: 0.9rem;
+  }
+}
