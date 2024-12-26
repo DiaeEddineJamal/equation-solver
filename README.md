@@ -155,7 +155,6 @@ Ce projet est sous licence MIT - voir le fichier [LICENSE.md](LICENSE.md) pour p
 
 ## Contact
 
-Nom - [@twitter_handle](https://twitter.com/twitter_handle)
-Email - email@example.com
+Email - diae_2002@hotmail.com
 
-Lien du projet: [https://github.com/votre-nom/solveur-equations-differentielles](https://github.com/votre-nom/solveur-equations-differentielles)
+Lien du projet: [https://github.com/votre-nom/solveur-equations-differentielles](https://github.com/DiaeEddineJamal/equation-solver)
