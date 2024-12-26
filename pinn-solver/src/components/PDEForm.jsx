@@ -19,7 +19,7 @@ function PDEForm() {
   };
 
   const handleSolve = async () => {
-    const response = await fetch("http://localhost:8080/api/v1/solver/pde", {
+    const response = await fetch("http://localhost:8082/api/v1/solver/pde", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(inputs),

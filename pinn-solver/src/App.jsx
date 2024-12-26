@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="app-container">
       <Navbar />
-      <Header />
+      
       <div className="stepper-container">
         <Stepper ref={stepperRef}>
           <StepperPanel header="Ordinary Differential Equations">
