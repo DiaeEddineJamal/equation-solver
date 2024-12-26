@@ -153,7 +153,7 @@ java -jar target/proxyApplicaion.jar
   - [DIAE-EDDINE JAMAL](https://github.com/DiaeEddineJamal)
 
 - **Développeurs**
-  - [HAITHAM AATITA](https://github.com/HaithamAatita)
+  - [HAYTAM AATITA](https://github.com/HaithamAatita)
   - [RIM DIGHALI](https://github.com/RimDighali)
   - [ALI EL JOUALI](https://github.com/AliEljouali)
   - [BASMA BOUKHAL](https://github.com/BasmaBoukhal)
