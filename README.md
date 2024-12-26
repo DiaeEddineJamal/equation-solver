@@ -2,7 +2,7 @@
 
 Un système distribué moderne pour la résolution d'équations différentielles ordinaires (ODE) et d'équations aux dérivées partielles (PDE) utilisant les réseaux de neurones physiques informés (PINN) et la méthode Runge-Kutta d'ordre 4, avec visualisation des résultats via Chart.js.
 
-![Architecture Diagram Placeholder](/api/placeholder/800/400)
+![Architecture Diagram Placeholder](https://i.ibb.co/5jMRyxy/Design-sans-titre-2-removebg-preview.png)
 
 ## Table des Matières
 - [Aperçu de l'Architecture](#aperçu-de-larchitecture)
@@ -10,8 +10,11 @@ Un système distribué moderne pour la résolution d'équations différentielles
 - [Composants du Système](#composants-du-système)
 - [Stack Technique](#stack-technique)
 - [Bibliothèques Spécialisées](#bibliothèques-spécialisées)
+- [Format des Équations Supportées](#format-des-équations-supportées)
 - [Mise en Route](#mise-en-route)
 - [Contribution](#contribution)
+- [Licence](#licence)
+- [Contact](#contact)
 
 ## Aperçu de l'Architecture
 
@@ -121,25 +124,41 @@ Exemple :
 1. **Cloner le Dépôt**
 ```bash
 git clone https://github.com/DiaeEddineJamal/equation-solver.git
-cd solveur-equations-differentielles
+cd equation-solver
 ```
 
 2. **Frontend**
 ```bash
-cd frontend
+cd pinn-solver
 npm install
 npm start
 ```
 
 4. **Backend**
 ```bash
-cd backend
+cd nodejs-equation-solver
 npm install
 npm start
+
+cd projectspring
+mvn clean install
+java -jar target/proxyApplicaion.jar
 ```
 
-
 ## Contribution
+
+### Équipe de Développement
+
+- **Chef de Projet et Développeur Principal**
+  - [DIAE-EDDINE JAMAL](https://github.com/DiaeEddineJamal)
+
+- **Développeurs**
+  - [HAITHAM AATITA](https://github.com/HaithamAatita)
+  - [RIM DIGHALI](https://github.com/RimDighali)
+  - [ALI EL JOUALI](https://github.com/AliEljouali)
+  - [BASMA BOUKHAL](https://github.com/BasmaBoukhal)
+
+### Comment Contribuer
 
 Nous accueillons les contributions ! Pour contribuer :
 
@@ -157,4 +176,4 @@ Ce projet est sous licence MIT - voir le fichier [LICENSE.md](LICENSE.md) pour p
 
 Email - diae_2002@hotmail.com
 
-Lien du projet: [https://github.com/votre-nom/solveur-equations-differentielles](https://github.com/DiaeEddineJamal/equation-solver)
+Lien du projet: [https://github.com/DiaeEddineJamal/equation-solver](https://github.com/DiaeEddineJamal/equation-solver)
